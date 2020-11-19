@@ -1,0 +1,2 @@
+# StudentManagement
+基于Java和MySQL实现的学生管理项目
