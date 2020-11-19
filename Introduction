@@ -1,0 +1,11 @@
+## 项目需求
+以管理员身份登录，实现对学员以及年级信息的增删改查操作。 
+具体功能有1、统计学生人数。2、查看学生名单。3、按学号查询学生姓名。4、按姓名查询学生信息。5、删除学生记录。6、修改学生年级。7、添加学生。8、退出。
+
+## 实现思路
+分为五个模块：dao、domain、service、view、utils。
+其中dao包访问数据类，包括BasicDao，StuDao，ManagerDao。提供对数据的增删改查的通用方法。
+domain包实体类，包括Manager，Student。
+service包业务类，包括managerService提供登录验证方法，stdentService提供增删改查方法。
+view包界面类，stuView提供主界面，TSUtility封装控制台操作。
+utils包数据库连接类，通过德鲁伊数据库连接池获取连接对象。
